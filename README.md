@@ -1,0 +1,11 @@
+- Firstly Extract the zip.
+- Run All Migrations by using command : php artisan migrate (this will create all the neccessary tables in database like users & posts).
+- Run Seeder now by using command : php artisan db:seed (this will create 2 dummy records in users table i.e.
+name = riya, email = riya@gmail.com & Password = 123   name = deepak,email = deepak@gmail.com & password = 123)
+- I have created a home page also where all the blogs list will be come which are created by different users.This will be helpful for all the visitors who just visit the website they can see all bogs listing and also read full bog details also by clicking on read more link also on each blog.
+- Only authenticated user can create,update or delete their own blogs so user first need to register themself by clicking on register button on navbar.
+- User can login by clicking on login button on navbar
+- Once user successfully logged in then user is redirected to a dashboard page which is basically all the blogs listing will come now here only those blogs will be shown to user which are created by that logged in user.
+- User can create,update or delete their own blogs after successfully logged in.
+- Logout facility also provided to user after logged in.
+- All the routes which are accessbile to user only after logged in are not directly hit by anyone if that person is not logged in as i created a custom middelware for that one.
